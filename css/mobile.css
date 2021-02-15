@@ -1,0 +1,52 @@
+#what .items{
+    display: block;
+    padding: 1rem;
+}
+/* Align icon to left */
+#what .items .item{
+    display: flex;
+    text-align: left;
+}
+/* position icon */
+#what .items .item i {
+    margin-right: 20px;
+    align-self: center;
+    margin-top:0
+}
+/* smartphones */
+@media (max-width:500px){
+    #navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+    #navbar .logo{
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    #navbar ul{
+        padding:0.5rem
+    }
+    #showcase .showcase-content{
+        top:110px;
+        margin-top: -2rem;
+    }
+    #who{
+        display: block;
+    }
+    #who .who-img{
+        display: none;
+    }
+    #clients .items img{
+        width:80%
+    }
+    #clients .items div:last-child{
+        display: none;
+    }
+    #contact{
+        flex-direction: column;
+    }
+    #contact .map{
+       height: 200x;
+       border-top: 2px solid #333;
+    }
+}

@@ -10,21 +10,21 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/style.css" class="" />
     <link
       rel="stylesheet"
-      media="screen and max-width(max-width:768px)"
+      media="screen and (max-width:768px)"
       href="css/mobile.css"
     />
+
     <link
       rel="stylesheet"
-      media="screen and max-width(min-width:1100px)"
+      media="screen and (min-width: 1100px)"
       href="css/widescreen.css"
     />
-
-    <link rel="stylesheet" href="css/style.css" class="" />
   </head>
 
-  <body>
+  <body id="home">
     <nav id="navbar">
       <h1 class="logo">
         <span class="text-primary">
@@ -34,10 +34,10 @@
       </h1>
 
       <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">What</a></li>
-        <li><a href="#">Who</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#what">What</a></li>
+        <li><a href="#who">Who</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
     <!-- header:showcase -->
@@ -60,27 +60,33 @@
         <div class="items">
           <div class="item">
             <i class="fa fa-book-reader fa-2x"></i>
-            <h3>Portfolio Management</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-              voluptates?
-            </p>
+            <div>
+              <h3>Portfolio Management</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                voluptates?
+              </p>
+            </div>
           </div>
           <div class="item">
             <i class="fa fa-university fa-2x"></i>
-            <h3>Investment Banking</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-              voluptates?
-            </p>
+            <div>
+              <h3>Investment Banking</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                voluptates?
+              </p>
+            </div>
           </div>
           <div class="item">
             <i class="fa fa-pencil-alt fa-2x"></i>
-            <h3>Tax & Custodial</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
-              voluptates?
-            </p>
+            <div>
+              <h3>Tax & Custodial</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam,
+                voluptates?
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -125,6 +131,7 @@
     </section>
     <!-- section contact form and map -->
     <section id="contact">
+      <div class="map"></div>
       <div class="contact-form bg-primary p-2">
         <form>
           <div class="form-group">
@@ -162,7 +169,6 @@
           <input type="button" value="Send" class="btn btn-dark" />
         </form>
       </div>
-      <div class="map"></div>
     </section>
 
     <!-- footer -->
@@ -173,12 +179,18 @@
     </footer>
 
     <!-- <i class="fa fa-envelope fa-10x" aria-hidden="true"></i> -->
-
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+    <!-- local js -->
     <script src="js/main.js"></script>
-    <!-- add your own key -->
+    <!-- google map -->
     <script
       async
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR-KEY"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCS-yF2UQl2c8RQmOCl72mVGo2zPPUsBk4&callback=initMap"
     ></script>
   </body>
 </html>
